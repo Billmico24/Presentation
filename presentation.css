@@ -1,0 +1,329 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    text-align: center; /* Center content */
+}
+
+header {
+    background-image: url('bg.jpg'); /* Replace 'your-image-url.jpg' with the URL of your image */
+    background-size: cover; /* Cover the entire header with the background image */
+    background-position: center; /* Center the background image */
+    color: #fff;
+    padding: 250px;
+    margin-bottom: 100px;
+}
+  
+header h1 {
+    margin: 0;
+    font-size: 100px;
+    font-family: 'gentona', sans-serif;
+}
+
+header p {
+    margin: 0; /* Add margin below the header text */
+    font-size: 14px; /* Adjust font size for the small text */
+}
+  
+nav ul {
+    list-style-type: none;
+}
+  
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+  
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Styles for the button */
+#nav-toggle {
+    display: flex;
+    align-items: center; /* Align content vertically */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 999;
+    transition: background-color 0.3s; /* Add transition effect */
+}
+  
+#nav-toggle:hover {
+    background-color: #555; /* Change background color on hover */
+}
+  
+#nav-toggle svg {
+    fill: #fff;
+    margin-right: 5px; /* Add space between icon and text */
+}
+
+/* Styles for the navigation */
+#main-nav {
+    position: fixed;
+    top: 0;
+    right: -200px; /* Initially hide the navigation off-screen */
+    background-color: #333;
+    width: 200px;
+    height: 100%;
+    padding-top: 60px; /* Add padding to align with header */
+    z-index: 998;
+    transition: right 0.3s ease; /* Add transition effect */
+}
+  
+#main-nav.open {
+    right: 0; /* Slide the navigation to the left when the "open" class is applied */
+}
+  
+#main-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+  
+#main-nav ul li {
+    padding: 10px;
+    text-align: center; /* Align list items in the center */
+}
+  
+#main-nav ul li a {
+    display: block; /* Make list items block-level elements */
+    color: #fff;
+    text-decoration: none;
+}
+  
+/* Slight glowing effect */
+#main-nav ul li a:hover {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+/* CSS for Member section */
+
+#members {
+    padding: 20px;
+}
+  
+#members h2 {
+    margin-bottom: 20px;
+}
+  
+.member-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Display 2 columns */
+    grid-template-rows: repeat(3, auto); /* Display 3 rows */
+    grid-gap: 20px; /* Add gap between cards */
+}
+  
+.member-card {
+    width: 250px;
+    padding: 20px; /* Adjust padding as needed */
+    background-color: #fff; /* Change background color to white */
+    border: 1px solid #ddd; /* Add border */
+    border-radius: 20px; /* Increase border-radius for a more rounded shape */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px auto; /* Add margin to create space between cards */
+}
+  
+.member-card img {
+    width: auto; /* Let the width adjust automatically */
+    height: 160px; /* Fixed height */
+    object-fit: cover; /* Ensure image maintains aspect ratio and covers the container */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.member-card {
+    position: relative;
+    width: 250px;
+    padding: 50px 15px; /* Adjust padding as needed */
+    background-color: #fff; /* Change background color to white */
+    border: 1px solid #ddd; /* Add border */
+    border-radius: 20px; /* Increase border-radius for a more rounded shape */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px auto; /* Add margin to create space between cards and center horizontally */
+    overflow: hidden; /* Hide overflow content */
+}
+
+.member-card:hover .member-details {
+    display: block; /* Display additional information when hovering over the card */
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.member-details {
+    display: none; /* Initially hide the additional information */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 1px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background color */
+
+}
+
+.member-details h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.member-details p {
+    margin-bottom: 45px;
+    font-size: 14px;
+    color: #666;
+}
+  
+.member-card-content {
+    padding: 20px; /* Adjust padding as needed */
+  }
+  
+.member-card h3 {
+    margin-top: 10px;
+    font-size: 16px; /* Reduce font size */
+}
+  
+.member-card p {
+    margin-top: 5px;
+    font-size: 12px; /* Reduce font size */
+    color: #666;
+}
+  
+section {
+    margin-bottom: 100px; /* Add space below each section */
+}
+
+#section2 {
+    background-image: url('bg.jpg'); /* Replace 'your-image-filename.jpg' with the filename of your background image */
+    background-size: cover; /* Cover the entire section with the background image */
+    background-position: center; /* Center the background image */
+    color: black;
+    padding: 250px 20px; /* Adjust padding as needed */
+    text-align: center; /* Center the text horizontally */
+}
+
+#section2 h2 {
+    font-size: 80px; /* Increase font size for the section heading */
+}
+
+#section2 p {
+    font-size: 20px;
+    color: 	#363424; /* Adjust font size for the paragraph */
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.logo-container:hover {
+    transform: scale(1.2);
+}
+
+.logo-container img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.filmotika-effect {
+    /* Add your cool effect styles here */
+    color: #f5de82; /* Example color change */
+    /* Add other styles like animations, transitions, etc. */
+}
+
+.client {
+    margin-bottom: 35px;
+    font-size: 30px;
+}
+
+#section3 {
+    margin-top: 250px;
+    margin-bottom: 250px;
+}
+
+#section4 h2 {
+    font-size: 50px; 
+    margin-bottom: 50px; 
+}
+
+.main-idea {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-idea .aim,
+.main-idea .goal {
+    width: 45%; /* Adjust width as needed */
+}
+
+.main-idea h3 {
+    font-size: 30px;
+    margin-bottom: 10px; /* Reduce margin bottom */
+}
+
+.main-idea p {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 250px;
+    font-style: italic;
+    
+}
+
+#section5 h2 {
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+#section5 .feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#section5 .feature-item {
+    width: calc(33.33% - 20px); /* Set width to one-third of the container width minus the desired gap */
+    display: inline-block;
+    margin-right: 20px; /* Adjust margin between feature items */
+    vertical-align: top; /* Align items to the top */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+/* Clear the right margin of every third feature item to prevent wrapping */
+#section5 .feature-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+#section5 .feature-item p {
+    text-align: justify; /* Center-align the text */
+    margin-top: 50px; 
+    margin-bottom: 30px;/* Add a small margin on top */
+}
+
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+  
